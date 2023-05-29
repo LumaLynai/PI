@@ -178,7 +178,7 @@ dic = (
   'WIZS3': 'WIZS3', 'WLM': 'WLMM4', 'YDUQS': 'YDUQ3', 'Zamp': 'ZAMP3'})
 
 t = dic[opcao]
-components.html("""
+st.sidebar.components.html("""
 <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
