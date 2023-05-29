@@ -16,13 +16,13 @@ import plotly.graph_objects as go
 
 components.html("""
 <div vw class="enabled">
-    <div vw-access-button class="active", height="230" width="150"></div>
+    <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
       <div class="vw-plugin-top-wrapper"></div>
     </div>
   </div>
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
+  <script  height="230" width="150">
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
 """,width=300, height=350, scrolling=True)
