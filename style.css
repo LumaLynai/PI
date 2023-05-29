@@ -2,3 +2,7 @@ footer{
     visibility: hidden;
 }
 
+enabled{
+    position:relative;
+    left:10px
+}
