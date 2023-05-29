@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import streamlit.components.v1 as components
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from keras.models import Sequential
@@ -13,8 +14,18 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 
-with open ("libras.html") as f:
-    st.markdown(f"<head>{f.read()}</head>", unsafe_allow_html=True)
+components.html("""
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+""")
 
 with open ("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
