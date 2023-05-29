@@ -4,9 +4,9 @@ footer{
 
 access-button{
     position:relative;
-    left:10px
+    left:50px
 }
 pop-up{
-    position:sticky;
+    position:relative;
     right:100px;
 }
