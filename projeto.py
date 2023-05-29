@@ -25,16 +25,16 @@ st.markdown(" <div vw class='enabled'><div vw-access-button class='active'></div
 st.markdown("<h1 style='text-align:center;font-size:80px; color:#def9fd; margin:0em 0em;'>INDICA &#128200;</h1>", unsafe_allow_html=True)
 st.markdown("<hr style= ' background-color:#B6F9FD; padding:0.01rem; width: 20vw; margin: 0em 0em 5em 0em;'>",unsafe_allow_html=True)
 components.html("""
- <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 """,width=300, scrolling=True)
 
 opcao = st.sidebar.selectbox('Empresas:',['NAN','3R Petroleum', '3tentos', 'Ânima Educação', 'Adolpho Lindenberg', 'Adolpho Lindenberg', 'Aeris Energy', 'AES Brasil', 
