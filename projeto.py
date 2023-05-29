@@ -14,9 +14,10 @@ import plotly.graph_objects as go
 
 
 with open ("style.css") as f:
-    st.markdown(" <div vw class='enabled'><div vw-access-button class='active'></div> <div vw-plugin-wrapper> <div class='vw-plugin-top-wrapper'></div> </div> </div> <script src='https://vlibras.gov.br/app/vlibras-plugin.js'></script> <script> new window.VLibras.Widget('https://vlibras.gov.br/app'); </script>", unsafe_allow_html=True)
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
     
 st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+st.markdown(" <div vw class='enabled'><div vw-access-button class='active'></div> <div vw-plugin-wrapper> <div class='vw-plugin-top-wrapper'></div> </div> </div> <script src='https://vlibras.gov.br/app/vlibras-plugin.js'></script> <script> new window.VLibras.Widget('https://vlibras.gov.br/app'); </script>", unsafe_allow_html=True)
 
 st.markdown("<h1 style='text-align:center;font-size:80px; color:#def9fd; margin:0em 0em;'>INDICA &#128200;</h1>", unsafe_allow_html=True)
 st.markdown("<hr style= ' background-color:#B6F9FD; padding:0.01rem; width: 20vw; margin: 0em 0em 5em 0em;'>",unsafe_allow_html=True)
