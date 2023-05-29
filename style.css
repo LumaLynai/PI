@@ -2,11 +2,7 @@ footer{
     visibility: hidden;
 }
 
-access-button{
-    position:relative;
-    left:100px;
-}
-pop-up{
-    position:relative;
-    right:100px;
+.access-button{
+   width: 80px;
+   float: left;
 }
