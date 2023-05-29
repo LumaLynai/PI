@@ -25,7 +25,7 @@ components.html("""
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
-""")
+""",width=300 height=350, scrolling=True)
 
 with open ("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
