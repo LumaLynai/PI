@@ -6,3 +6,7 @@ access-button{
     position:relative;
     left:10px
 }
+pop-up{
+    position:sticky;
+    right:100px;
+}
