@@ -16,7 +16,7 @@ import plotly.graph_objects as go
 
 components.html("""
 <div vw class="enabled">
-    <div vw-access-button class="active"></div>
+    <div vw-access-button class="active", height="230" width="150"></div>
     <div vw-plugin-wrapper>
       <div class="vw-plugin-top-wrapper"></div>
     </div>
