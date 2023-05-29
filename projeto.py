@@ -14,7 +14,7 @@ import plotly.graph_objects as go
 
 
 with open ("libras.html") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+    st.markdown(f"<head>{f.read()}</head>", unsafe_allow_html=True)
 
 with open ("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
